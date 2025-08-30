@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="zh-CN" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IntelliCube - Open Source Enterprise Feature Platform for Machine Learning</title>
+    <title>“启智” (IntelliCube) - 企业级特征平台</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- Chosen Palette: Calm Harmony -->
-    <!-- Application Structure Plan: The application is structured as a narrative journey to guide potential users from understanding the problem to seeing the solution's value. It starts with a Hero section stating the value proposition. It then visualizes "The Challenge" with an interactive diagram. This is followed by "Our Solution," an interactive tabbed section detailing the four core features. A "Benefits Dashboard" uses animated stats and a chart to quantify the advantages. Finally, "Use Cases" and "Target Audience" sections provide real-world context and relevance. This thematic, top-down structure is chosen over a simple document layout to make a complex technical product more digestible, engaging, and persuasive for its target audience of engineers and data scientists. -->
+    <!-- Application Structure Plan: The application is structured as a narrative journey to guide potential users from understanding the problem to seeing the solution's value. It starts with a Hero section stating the value proposition. It then visualizes the "Challenge" (the problem) with an interactive diagram. This is followed by the "Solution," an interactive tabbed section detailing the four core features. A "Benefits Dashboard" uses animated stats and a chart to quantify the advantages. Finally, "Use Cases" and "Target Audience" sections provide real-world context and relevance. This thematic, top-down structure is chosen over a simple document layout to make a complex technical product more digestible, engaging, and persuasive for its target audience of engineers and data scientists. -->
     <!-- Visualization & Content Choices: 
         1. ML Workflow Diagram (Challenge Section): Report Info -> Complex ML data lifecycle. Goal -> Organize/Inform. Viz -> HTML/CSS diagram. Interaction -> Hovering on pain points reveals tooltips explaining issues like data silos and skew. Justification -> Visually contrasts the "old way" with the new solution, making the problem tangible. Method -> HTML/Tailwind CSS.
         2. Core Features Tabs (Solution Section): Report Info -> The four main product features. Goal -> Organize/Inform. Viz -> Tabbed interface with text and diagrams. Interaction -> Clicking tabs reveals detailed content for each feature. A "code toggle" shows the simplicity of declarative Python. Justification -> Breaks down the core product into manageable, explorable pieces, catering to a technical audience that wants details on demand. Method -> HTML/CSS/JS.
@@ -21,7 +21,7 @@
     <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
     <style>
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Noto Sans SC', sans-serif;
             background-color: #F8F7F4;
             color: #3D405B;
         }
@@ -90,25 +90,25 @@
 
     <header class="bg-soft-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-accent">IntelliCube</a>
+            <a href="#" class="text-2xl font-bold text-accent">启智 IntelliCube</a>
             <div class="hidden md:flex items-center space-x-8">
-                <a href="#challenge" class="text-secondary hover:text-accent transition">The Challenge</a>
-                <a href="#solution" class="text-secondary hover:text-accent transition">Our Solution</a>
-                <a href="#benefits" class="text-secondary hover:text-accent transition">Benefits</a>
-                <a href="#use-cases" class="text-secondary hover:text-accent transition">Use Cases</a>
+                <a href="#challenge" class="text-secondary hover:text-accent transition">核心挑战</a>
+                <a href="#solution" class="text-secondary hover:text-accent transition">解决方案</a>
+                <a href="#benefits" class="text-secondary hover:text-accent transition">产品优势</a>
+                <a href="#use-cases" class="text-secondary hover:text-accent transition">应用场景</a>
             </div>
-            <a href="#contact" class="hidden md:inline-block bg-accent text-white font-bold py-2 px-6 rounded-lg btn-primary">Request a Demo</a>
+            <a href="#contact" class="hidden md:inline-block bg-accent text-white font-bold py-2 px-6 rounded-lg btn-primary">预约演示</a>
         </nav>
     </header>
 
     <main>
         <section id="hero" class="py-20 md:py-32">
             <div class="container mx-auto px-6 text-center">
-                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">The Open Source Enterprise Feature Platform for Machine Learning</h1>
-                <p class="text-lg md:text-xl text-secondary max-w-6xl mx-auto mb-8">Move beyond complex feature engineering and data management. Empower your AI applications to create value from data with unprecedented speed and reliability.</p>
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">开源企业级机器学习特征平台</h1>
+                <p class="text-lg md:text-xl text-secondary max-w-6xl mx-auto mb-8">告别复杂的特征工程与数据管理，让您的AI应用以前所未有的速度和可靠性从数据中创造价值。</p>
                 <div class="flex justify-center space-x-4">
-                    <a href="#solution" class="bg-accent text-white font-bold py-3 px-8 rounded-lg btn-primary text-lg">Explore the Solution</a>
-                    <a href="#contact" class="bg-gray-200 text-secondary font-bold py-3 px-8 rounded-lg btn-primary text-lg">Contact Us</a>
+                    <a href="#solution" class="bg-accent text-white font-bold py-3 px-8 rounded-lg btn-primary text-lg">了解方案</a>
+                    <a href="#contact" class="bg-gray-200 text-secondary font-bold py-3 px-8 rounded-lg btn-primary text-lg">联系我们</a>
                 </div>
             </div>
         </section>
@@ -116,49 +116,49 @@
         <section id="challenge" class="py-20 bg-soft-white">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">The Hidden Cost of Machine Learning Data</h2>
-                    <p class="text-lg text-secondary max-w-6xl mx-auto">Up to 80% of the time in AI development is spent on data preparation. Traditional workflows are manual, error-prone, and siloed, dramatically slowing down innovation.</p>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">直面核心挑战：机器学习数据的“隐形成本”</h2>
+                    <p class="text-lg text-secondary max-w-6xl mx-auto">在构建AI应用时，80%的时间都消耗在数据准备上。传统工作流充满了手动、易错和孤立的环节，严重拖慢了创新速度。</p>
                 </div>
 
                 <div class="bg-gray-50 p-8 rounded-xl shadow-inner">
-                    <h3 class="text-xl font-bold text-center mb-10">The Traditional, Inefficient Feature Workflow</h3>
+                    <h3 class="text-xl font-bold text-center mb-10">传统、低效的特征开发流程</h3>
                     <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8">
                         <div class="text-center w-48 pain-point">
                             <div class="bg-white p-4 rounded-lg shadow-md border flow-line">
                                 <span class="text-4xl">📚</span>
-                                <p class="font-semibold mt-2">Raw Data</p>
+                                <p class="font-semibold mt-2">原始数据</p>
                             </div>
-                             <div class="tooltip absolute bottom-full mb-2 w-48 bg-gray-800 text-white text-xs rounded py-1 px-2 text-center">Siloed data sources, inconsistent formats</div>
+                             <div class="tooltip absolute bottom-full mb-2 w-48 bg-gray-800 text-white text-xs rounded py-1 px-2 text-center">数据源分散，格式不一</div>
                         </div>
 
                         <div class="text-center w-48 pain-point">
                             <div class="bg-white p-4 rounded-lg shadow-md border flow-line">
                                <span class="text-4xl">⚙️</span>
-                                <p class="font-semibold mt-2">Manual ETL</p>
+                                <p class="font-semibold mt-2">手动ETL</p>
                             </div>
-                            <div class="tooltip absolute bottom-full mb-2 w-48 bg-gray-800 text-white text-xs rounded py-1 px-2 text-center">Brittle, time-consuming scripts to write and maintain</div>
+                            <div class="tooltip absolute bottom-full mb-2 w-48 bg-gray-800 text-white text-xs rounded py-1 px-2 text-center">编写和维护脆弱的ETL脚本，耗时耗力</div>
                         </div>
 
                         <div class="text-center w-48 pain-point">
                             <div class="bg-white p-4 rounded-lg shadow-md border flow-line">
                                 <span class="text-4xl">💾</span>
-                                <p class="font-semibold mt-2">Offline Features</p>
+                                <p class="font-semibold mt-2">离线特征</p>
                             </div>
-                            <div class="tooltip absolute bottom-full mb-2 w-48 bg-gray-800 text-white text-xs rounded py-1 px-2 text-center">Built for training, but hard to serve online</div>
+                            <div class="tooltip absolute bottom-full mb-2 w-48 bg-gray-800 text-white text-xs rounded py-1 px-2 text-center">为训练生成，但难以用于在线服务</div>
                         </div>
 
                         <div class="text-center w-48">
                             <div class="relative bg-white p-4 rounded-lg shadow-md border">
                                 <span class="text-4xl">⚡️</span>
-                                <p class="font-semibold mt-2">Online Features</p>
+                                <p class="font-semibold mt-2">在线特征</p>
                                 <div class="absolute -top-4 -right-4 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full pain-point">
-                                    SKEW!
-                                    <div class="tooltip absolute bottom-full mb-2 w-48 bg-gray-800 text-white text-xs rounded py-1 px-2 text-center">Training-serving skew degrades model performance</div>
+                                    偏见!
+                                    <div class="tooltip absolute bottom-full mb-2 w-48 bg-gray-800 text-white text-xs rounded py-1 px-2 text-center">训练-服务偏差(Training-Serving Skew)导致模型性能下降</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                     <p class="text-center mt-10 text-red-600 font-semibold text-lg">The Result: Slow model iteration and unreliable production performance.</p>
+                     <p class="text-center mt-10 text-red-600 font-semibold text-lg">最终导致：模型迭代缓慢，生产性能不可靠</p>
                 </div>
             </div>
         </section>
@@ -166,56 +166,56 @@
         <section id="solution" class="py-20">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">The IntelliCube Solution: End-to-End ML Data Lifecycle Management</h2>
-                    <p class="text-lg text-secondary max-w-6xl mx-auto">We transform this complex process into an automated, collaborative, and unified platform with four core modules that solve the data challenge at its root.</p>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">“启智”解决方案：端到端的机器学习数据生命周期管理</h2>
+                    <p class="text-lg text-secondary max-w-6xl mx-auto">我们通过四大核心模块，将复杂流程转变为一个自动化、可协作的统一平台，从根本上解决数据挑战。</p>
                 </div>
 
                 <div class="flex flex-col md:flex-row gap-8">
                     <div class="w-full md:w-1/4">
                         <div id="tabs-nav" class="flex md:flex-col gap-2">
                             <button data-tab="tab1" class="tab text-left w-full p-4 rounded-lg border-2 border-transparent transition tab-active">
-                                <span class="font-bold text-lg">1. Unified Feature Store</span>
-                                <span class="text-sm text-secondary block">A single source of truth to end data silos.</span>
+                                <span class="font-bold text-lg">1. 统一特征存储</span>
+                                <span class="text-sm text-secondary block">单一可信源，终结数据孤岛</span>
                             </button>
                             <button data-tab="tab2" class="tab text-left w-full p-4 rounded-lg border-2 border-transparent transition">
-                                <span class="font-bold text-lg">2. Declarative Feature Engineering</span>
-                                <span class="text-sm text-secondary block">Define in Python, let the platform execute.</span>
+                                <span class="font-bold text-lg">2. 声明式特征工程</span>
+                                <span class="text-sm text-secondary block">用Python定义，平台自动执行</span>
                             </button>
                             <button data-tab="tab3" class="tab text-left w-full p-4 rounded-lg border-2 border-transparent transition">
-                                <span class="font-bold text-lg">3. High-Performance Online Serving</span>
-                                <span class="text-sm text-secondary block">Millisecond latency with guaranteed consistency.</span>
+                                <span class="font-bold text-lg">3. 高性能在线服务</span>
+                                <span class="text-sm text-secondary block">毫秒级延迟，确保服务一致性</span>
                             </button>
                             <button data-tab="tab4" class="tab text-left w-full p-4 rounded-lg border-2 border-transparent transition">
-                                <span class="font-bold text-lg">4. One-Click Training Data Generation</span>
-                                <span class="text-sm text-secondary block">Point-in-time correct data, no leakage.</span>
+                                <span class="font-bold text-lg">4. 一键式样本生成</span>
+                                <span class="text-sm text-secondary block">时间点准确，杜绝数据泄露</span>
                             </button>
                         </div>
                     </div>
                     <div class="w-full md:w-3/4">
                         <div id="tabs-content" class="bg-soft-white p-8 rounded-xl shadow-lg min-h-[450px]">
                             <div id="tab1" class="tab-content">
-                                <h3 class="text-2xl font-bold mb-4">Unified Feature Store</h3>
-                                <p class="text-secondary mb-6">Provides a single source of truth for all features across the enterprise, enabling discovery and reuse. It intelligently integrates online (low-latency) and offline (high-throughput) stores, automating data synchronization to guarantee consistency between training and serving.</p>
+                                <h3 class="text-2xl font-bold mb-4">统一特征存储</h3>
+                                <p class="text-secondary mb-6">提供一个单一、可信的中央存储库，用于管理、共享和复用企业内的所有特征。智能集成在线（低延迟）和离线（高吞吐）存储，自动同步数据，从根源上保证训练与服务的数据一致性。</p>
                                 <div class="bg-gray-50 p-6 rounded-lg">
                                     <div class="flex flex-col md:flex-row items-center justify-around">
-                                        <div class="text-center p-2"><span class="text-3xl">☁️</span><p class="mt-2 font-medium">Data Sources</p></div>
+                                        <div class="text-center p-2"><span class="text-3xl">☁️</span><p class="mt-2 font-medium">数据源</p></div>
                                         <div class="text-4xl text-gray-300 mx-4">→</div>
                                         <div class="text-center p-4 bg-accent-light rounded-xl border-2 border-dashed border-accent">
                                             <span class="text-3xl">🏛️</span>
-                                            <p class="mt-2 font-bold text-accent">IntelliCube Store</p>
-                                            <p class="text-xs text-secondary">Versioning & Lineage</p>
+                                            <p class="mt-2 font-bold text-accent">启智特征仓库</p>
+                                            <p class="text-xs text-secondary">版本控制 & 血缘追踪</p>
                                         </div>
                                         <div class="text-4xl text-gray-300 mx-4">→</div>
                                         <div class="flex flex-col space-y-4">
-                                            <div class="text-center p-2 bg-white rounded-lg shadow-sm"><span class="text-3xl">⚡️</span><p class="mt-1 font-medium">Online Apps</p></div>
-                                            <div class="text-center p-2 bg-white rounded-lg shadow-sm"><span class="text-3xl">🧠</span><p class="mt-1 font-medium">Model Training</p></div>
+                                            <div class="text-center p-2 bg-white rounded-lg shadow-sm"><span class="text-3xl">⚡️</span><p class="mt-1 font-medium">在线应用</p></div>
+                                            <div class="text-center p-2 bg-white rounded-lg shadow-sm"><span class="text-3xl">🧠</span><p class="mt-1 font-medium">模型训练</p></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div id="tab2" class="tab-content hidden">
-                                <h3 class="text-2xl font-bold mb-4">Declarative Feature Engineering</h3>
-                                <p class="text-secondary mb-6">Data scientists can define feature transformations in familiar Python. The platform automatically compiles these definitions into efficient data processing jobs and orchestrates their execution, eliminating the need to manually write and maintain ETL scripts.</p>
+                                <h3 class="text-2xl font-bold mb-4">声明式特征工程</h3>
+                                <p class="text-secondary mb-6">数据科学家可以使用熟悉的Python，以声明式的方式定义特征转换逻辑。平台自动将其编译成高效的数据处理任务，并在后台调度执行，无需手动编写和维护ETL脚本。</p>
                                 <div class="bg-gray-800 text-white p-4 rounded-lg font-mono text-sm">
                                     <pre><code>
 @batch_feature_view(
@@ -236,35 +236,35 @@ def user_total_spend(transactions_df):
     """
                                     </code></pre>
                                 </div>
-                                <p class="text-sm mt-4 text-secondary text-center">Simple Python definitions replace hundreds of lines of complex ETL code.</p>
+                                <p class="text-sm mt-4 text-secondary text-center">简洁的Python定义取代了数百行复杂的ETL代码。</p>
                             </div>
                             <div id="tab3" class="tab-content hidden">
-                                <h3 class="text-2xl font-bold mb-4">High-Performance Online Serving</h3>
-                                <p class="text-secondary mb-6">Delivers a high-concurrency feature serving API with millisecond latency to meet the strict performance demands of real-time applications like fraud detection. The architecture is production-hardened, highly available, and auto-scaling.</p>
+                                <h3 class="text-2xl font-bold mb-4">高性能在线服务</h3>
+                                <p class="text-secondary mb-6">提供毫秒级延迟的高并发特征获取API，满足实时推荐、欺诈检测等在线应用对性能的严苛要求。架构经过生产环境验证，具备高可用性与自动伸缩能力。</p>
                                 <div class="chart-container mx-auto h-64 md:h-80 max-h-[350px] max-w-lg">
                                     <canvas id="latencyChart"></canvas>
                                 </div>
                             </div>
                             <div id="tab4" class="tab-content hidden">
-                                <h3 class="text-2xl font-bold mb-4">One-Click Training Data Generation</h3>
-                                <p class="text-secondary mb-6">Accurately generates training datasets from any point in history, guaranteeing no data leakage. It leverages materialized features in the offline store to rapidly build terabyte-scale datasets, dramatically reducing model iteration cycles.</p>
+                                <h3 class="text-2xl font-bold mb-4">一键式样本生成</h3>
+                                <p class="text-secondary mb-6">能够基于历史任意时间点，精确地、无未来数据泄露地生成训练样本集。利用离线存储中的物化特征，快速生成TB级别的训练数据，极大缩短模型迭代周期。</p>
                                 <div class="bg-gray-50 p-6 rounded-lg text-center">
-                                    <h4 class="font-bold mb-4">Generate Training Set</h4>
+                                    <h4 class="font-bold mb-4">生成训练集</h4>
                                     <div class="flex items-center justify-center space-x-4">
                                         <div class="text-left bg-white p-3 rounded shadow-sm">
-                                            <p class="text-xs text-secondary">Select Features:</p>
+                                            <p class="text-xs text-secondary">选择特征:</p>
                                             <p>user_total_spend, ...</p>
                                         </div>
                                         <div class="text-left bg-white p-3 rounded shadow-sm">
-                                            <p class="text-xs text-secondary">Time Range:</p>
+                                            <p class="text-xs text-secondary">时间范围:</p>
                                             <p>2024-01-01 to 2024-06-30</p>
                                         </div>
                                         <button id="generateDataBtn" class="bg-accent text-white font-bold py-3 px-6 rounded-lg btn-primary">
-                                            ▶ Generate
+                                            ▶ 生成样本
                                         </button>
                                     </div>
                                     <div id="generationResult" class="mt-6 h-12 flex items-center justify-center">
-                                        <p class="text-secondary">Click the button to start generation...</p>
+                                        <p class="text-secondary">点击按钮开始生成...</p>
                                     </div>
                                 </div>
                             </div>
@@ -277,28 +277,28 @@ def user_total_spend(transactions_df):
         <section id="benefits" class="py-20 bg-soft-white">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Quantifiable Business Advantages</h2>
-                    <p class="text-lg text-secondary max-w-6xl mx-auto">IntelliCube doesn't just improve technical efficiency—it directly drives business growth and cost savings.</p>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">可量化的业务优势</h2>
+                    <p class="text-lg text-secondary max-w-6xl mx-auto">“启智”平台不仅提升技术效率，更直接驱动业务增长和成本节约。</p>
                 </div>
                 <div class="grid md:grid-cols-3 gap-8 text-center">
                     <div class="bg-warm-neutral p-8 rounded-xl">
                         <p class="text-6xl font-bold text-accent mb-2" data-target="10">0</p>
-                        <p class="text-xl font-semibold mb-2">10x Faster Development</p>
-                        <p class="text-secondary">Reduce feature development and deployment from weeks to hours.</p>
+                        <p class="text-xl font-semibold mb-2">开发效率提升10倍</p>
+                        <p class="text-secondary">将数周的特征开发部署时间，缩短至数小时。</p>
                     </div>
                     <div class="bg-warm-neutral p-8 rounded-xl">
                         <p class="text-6xl font-bold text-accent mb-2" data-target="80">0</p>
-                        <p class="text-xl font-semibold mb-2">80% Lower Operational Costs</p>
-                        <p class="text-secondary">Automate data pipelines, reducing the workload for engineering teams.</p>
+                        <p class="text-xl font-semibold mb-2">运营成本降低80%</p>
+                        <p class="text-secondary">自动化管理数据管道，减少数据与运维团队工作量。</p>
                     </div>
                     <div class="bg-warm-neutral p-8 rounded-xl">
                         <p class="text-6xl font-bold text-accent mb-2" data-target="99">0</p>
-                        <p class="text-xl font-semibold mb-2">Improved Model Performance</p>
-                        <p class="text-secondary">Boost accuracy with high-quality, consistent, and reliable features.</p>
+                        <p class="text-xl font-semibold mb-2">模型性能显著改善</p>
+                        <p class="text-secondary">高质量、一致的特征，提升模型准确性与稳定性。</p>
                     </div>
                 </div>
                  <div class="mt-16 bg-warm-neutral p-8 rounded-xl">
-                     <h3 class="text-2xl font-bold text-center mb-6">Team Efficiency Comparison</h3>
+                     <h3 class="text-2xl font-bold text-center mb-6">团队协作效率对比</h3>
                      <div class="chart-container mx-auto h-64 md:h-80 max-h-[400px] max-w-2xl">
                         <canvas id="collaborationChart"></canvas>
                     </div>
@@ -309,27 +309,27 @@ def user_total_spend(transactions_df):
         <section id="use-cases" class="py-20">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Powered Use Cases</h2>
-                    <p class="text-lg text-secondary max-w-6xl mx-auto">Providing a solid data foundation for complex machine learning applications across industries.</p>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">丰富的应用场景</h2>
+                    <p class="text-lg text-secondary max-w-6xl mx-auto">为各行各业的复杂机器学习应用提供坚实的数据基础。</p>
                 </div>
                 <div class="flex flex-col md:flex-row gap-8">
                     <div class="w-full md:w-1/3">
                         <div id="use-cases-nav" class="flex flex-col gap-4">
                             <button class="use-case-card text-left p-4 bg-white rounded-lg border-2 border-transparent shadow-md transition-all duration-300 use-case-card-active" data-case="case1">
-                                <p class="font-bold text-lg">Real-time Fraud Detection</p>
-                                <p class="text-sm text-secondary">Access the latest user features in milliseconds to stop fraud.</p>
+                                <p class="font-bold text-lg">实时欺诈检测</p>
+                                <p class="text-sm text-secondary">毫秒内获取用户最新行为特征，精准识别异常交易。</p>
                             </button>
                             <button class="use-case-card text-left p-4 bg-white rounded-lg border-2 border-transparent shadow-md transition-all duration-300" data-case="case2">
-                                <p class="font-bold text-lg">Personalized Recommendations</p>
-                                <p class="text-sm text-secondary">Combine real-time and historical data for dynamic content.</p>
+                                <p class="font-bold text-lg">个性化推荐系统</p>
+                                <p class="text-sm text-secondary">结合用户实时与历史偏好，动态调整推荐内容。</p>
                             </button>
                              <button class="use-case-card text-left p-4 bg-white rounded-lg border-2 border-transparent shadow-md transition-all duration-300" data-case="case3">
-                                <p class="font-bold text-lg">Credit Risk Assessment</p>
-                                <p class="text-sm text-secondary">Rapidly integrate diverse data sources for comprehensive scoring.</p>
+                                <p class="font-bold text-lg">信贷风险评估</p>
+                                <p class="text-sm text-secondary">快速整合多源数据，生成全面的信用评估特征。</p>
                             </button>
                             <button class="use-case-card text-left p-4 bg-white rounded-lg border-2 border-transparent shadow-md transition-all duration-300" data-case="case4">
-                                <p class="font-bold text-lg">Dynamic Pricing</p>
-                                <p class="text-sm text-secondary">Adjust pricing intelligently based on real-time market data.</p>
+                                <p class="font-bold text-lg">动态定价</p>
+                                <p class="text-sm text-secondary">根据实时市场供需和用户画像，智能调整定价。</p>
                             </button>
                         </div>
                     </div>
@@ -338,29 +338,29 @@ def user_total_spend(transactions_df):
                             <div id="case1" class="use-case-content">
                                 <div class="text-center">
                                     <span class="text-6xl">🛡️</span>
-                                    <h3 class="text-2xl font-bold mt-4 mb-2">Real-time Fraud Detection</h3>
-                                    <p class="text-secondary max-w-md mx-auto">With our <strong>High-Performance Online Serving</strong>, the platform delivers critical features like behavioral sequences and device fingerprints at the moment of transaction, enabling sub-second model responses to block fraud effectively.</p>
+                                    <h3 class="text-2xl font-bold mt-4 mb-2">实时欺诈检测</h3>
+                                    <p class="text-secondary max-w-md mx-auto">通过<strong>高性能在线服务</strong>，我们的平台能在交易发生的瞬间提供最新的用户行为序列、设备指纹等关键特征，帮助模型做出亚秒级响应，有效拦截欺诈行为。</p>
                                 </div>
                             </div>
                             <div id="case2" class="use-case-content hidden">
                                <div class="text-center">
                                     <span class="text-6xl">🎯</span>
-                                    <h3 class="text-2xl font-bold mt-4 mb-2">Personalized Recommendations</h3>
-                                    <p class="text-secondary max-w-md mx-auto">Combine a user's long-term preferences from the <strong>Unified Feature Store</strong> with real-time clickstream data from online serving to generate highly personalized recommendations, boosting engagement and conversion.</p>
+                                    <h3 class="text-2xl font-bold mt-4 mb-2">个性化推荐系统</h3>
+                                    <p class="text-secondary max-w-md mx-auto">结合<strong>统一特征存储</strong>中的用户长期偏好和在线服务的实时点击流数据，为用户生成高度个性化的推荐，提升点击率和转化率。</p>
                                 </div>
                             </div>
                             <div id="case3" class="use-case-content hidden">
                                <div class="text-center">
                                     <span class="text-6xl">📊</span>
-                                    <h3 class="text-2xl font-bold mt-4 mb-2">Credit Risk Assessment</h3>
-                                    <p class="text-secondary max-w-md mx-auto">Use <strong>Declarative Feature Engineering</strong> and <strong>One-Click Training Data Generation</strong> to quickly process and backfill an applicant's historical data, efficiently creating credit features for model training to improve approval speed and accuracy.</p>
+                                    <h3 class="text-2xl font-bold mt-4 mb-2">信贷风险评估</h3>
+                                    <p class="text-secondary max-w-md mx-auto">利用<strong>声明式特征工程</strong>和<strong>一键式样本生成</strong>，快速处理和回填申请人的历史数据，高效生成用于模型训练的信用特征，提升审批效率和风控准确性。</p>
                                 </div>
                             </div>
                              <div id="case4" class="use-case-content hidden">
                                <div class="text-center">
                                     <span class="text-6xl">📈</span>
-                                    <h3 class="text-2xl font-bold mt-4 mb-2">Dynamic Pricing</h3>
-                                    <p class="text-secondary max-w-md mx-auto">Integrate real-time market supply, competitor prices, and user profile features, allowing pricing models to make decisions based on the latest information to maximize revenue.</p>
+                                    <h3 class="text-2xl font-bold mt-4 mb-2">动态定价</h3>
+                                    <p class="text-secondary max-w-md mx-auto">整合实时市场供需、竞争对手价格和用户画像特征，让定价模型能够基于最新信息进行决策，实现收益最大化。</p>
                                 </div>
                             </div>
                         </div>
@@ -371,9 +371,9 @@ def user_total_spend(transactions_df):
         
         <section id="contact" class="py-20 bg-accent text-white">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Accelerate Your AI Innovation?</h2>
-                <p class="text-lg text-indigo-100 max-w-2xl mx-auto mb-8">Contact our team of experts to request a product demo and learn how the IntelliCube platform can empower your business.</p>
-                <a href="https://github.com/intellicubex/website" target="_blank" class="bg-white text-accent font-bold py-3 px-8 rounded-lg btn-primary text-lg transition hover:bg-gray-100">Request a Demo Now</a>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">准备好加速您的AI创新了吗？</h2>
+                <p class="text-lg text-indigo-100 max-w-2xl mx-auto mb-8">联系我们的专家团队，预约一次产品演示，了解“启智”平台如何为您的业务赋能。</p>
+                <a href="https://github.com/intellicubex/website" target="_blank" class="bg-white text-accent font-bold py-3 px-8 rounded-lg btn-primary text-lg transition hover:bg-gray-100">立即预约演示</a>
             </div>
         </section>
     </main>
@@ -424,9 +424,9 @@ def user_total_spend(transactions_df):
             const generateDataBtn = document.getElementById('generateDataBtn');
             const generationResult = document.getElementById('generationResult');
             generateDataBtn.addEventListener('click', () => {
-                generationResult.innerHTML = `<div class="flex items-center justify-center text-secondary"><div class="animate-spin rounded-full h-5 w-5 border-b-2 border-accent"></div><p class="ml-3">Generating point-in-time correct data...</p></div>`;
+                generationResult.innerHTML = `<div class="flex items-center justify-center text-secondary"><div class="animate-spin rounded-full h-5 w-5 border-b-2 border-accent"></div><p class="ml-3">正在生成时间点准确的样本...</p></div>`;
                 setTimeout(() => {
-                    generationResult.innerHTML = `<p class="text-green-600 font-semibold">✓ Successfully generated 1.2TB training set!</p>`;
+                    generationResult.innerHTML = `<p class="text-green-600 font-semibold">✓ 成功生成 1.2TB 训练样本集！</p>`;
                 }, 2500);
             });
             
@@ -447,7 +447,6 @@ def user_total_spend(transactions_df):
                             counter.innerText = target;
                         }
                     };
-                    counter.innerText = '0';
                     updateCount();
                 });
             }
@@ -472,9 +471,9 @@ def user_total_spend(transactions_df):
                 new Chart(ctx, {
                     type: 'bar',
                     data: {
-                        labels: ['IntelliCube Serving', 'Traditional DB Query'],
+                        labels: ['启智在线服务', '传统数据库查询'],
                         datasets: [{
-                            label: 'Average Latency (ms)',
+                            label: '平均延迟 (ms)',
                             data: [15, 250],
                             backgroundColor: [
                                 'rgba(74, 144, 226, 0.6)',
@@ -496,7 +495,7 @@ def user_total_spend(transactions_df):
                                 beginAtZero: true,
                                 title: {
                                     display: true,
-                                    text: 'Latency (ms)'
+                                    text: '延迟 (毫秒)'
                                 }
                             }
                         },
@@ -521,17 +520,17 @@ def user_total_spend(transactions_df):
                 new Chart(ctx, {
                     type: 'bar',
                     data: {
-                        labels: ['Data Prep', 'Model Training', 'Deployment', 'Debugging'],
+                        labels: ['数据准备', '模型训练', '模型部署', '问题排查'],
                         datasets: [
                             {
-                                label: 'Traditional Workflow',
+                                label: '传统流程',
                                 data: [70, 10, 15, 5],
                                 backgroundColor: 'rgba(210, 214, 220, 0.6)',
                                 borderColor: 'rgba(210, 214, 220, 1)',
                                 borderWidth: 1
                             },
                             {
-                                label: 'With IntelliCube',
+                                label: '使用“启智”平台',
                                 data: [20, 40, 30, 10],
                                 backgroundColor: 'rgba(74, 144, 226, 0.6)',
                                 borderColor: 'rgba(74, 144, 226, 1)',
@@ -550,7 +549,7 @@ def user_total_spend(transactions_df):
                                 stacked: true,
                                 title: {
                                     display: true,
-                                    text: 'Time Allocation (%)'
+                                    text: '时间分配 (%)'
                                 }
                             }
                         },
